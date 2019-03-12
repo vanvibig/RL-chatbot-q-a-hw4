@@ -8,7 +8,7 @@ import shutil
 from id2sent import id2sent
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-checkpoint=True
+checkpoint=False
 
 def main():
     max_seq_len = 20
@@ -17,8 +17,8 @@ def main():
     rnn_size = 256
     n_layers = 3
 
-    n_epoch = 200
-    start_epoch = 100
+    n_epoch = 100
+    start_epoch = 0
     batch_size = 32
     learning_rate = 1e-6
     # learning_rate = 1e-3
