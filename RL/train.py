@@ -21,8 +21,8 @@ def main():
     n_epoch = 300
     start_epoch = 0
     batch_size = 32
-    learning_rate = 1e-6
-    # learning_rate = 1e-3
+    # learning_rate = 1e-6
+    learning_rate = 1e-3
 
     work_dir = 'RL/'
 
