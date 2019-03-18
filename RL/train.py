@@ -118,7 +118,7 @@ def rewardfunc(_output_sent, _ans_sent):
 
     for i in range(len(_ans_sent)):
         sent = _ans_sent[i]
-        if "don't know" not in sent:
+        if "không biết" not in sent or "không" not in sent:
             score_list[i] += 0.1
 
         if '<unk>' not in sent:
