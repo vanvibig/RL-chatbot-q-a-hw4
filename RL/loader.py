@@ -17,7 +17,7 @@ class Loader:
             r'[\w\']+|\?|[\.]+|,|\!'
         )
 
-        lines = [tokenizer.tokenize(ViTokenizer.tokenize(_.lower())) for _ in lines]
+        lines = [tokenizer.tokenize(_.lower()) for _ in lines]
         return lines
 
 
