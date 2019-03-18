@@ -19,7 +19,7 @@ def main():
     input_tensors, output_tensors = s2s.build_model(train=False)
 
     # test_data = open(sys.argv[1]).readlines()
-    test_data = open('sample_input.txt').readlines()
+    test_data = open('sample_input_for_RL.txt').readlines()
     test_id, test_len = loader.to_test(test_data)
 
     config = tf.ConfigProto(
@@ -40,7 +40,7 @@ def main():
         outputs = id2sent(dic, output)
         
         # with open(sys.argv[2], 'w') as f:
-        with open('sample_output_RL.txt', 'w') as f:
+        with open('sample_output_for_RL.txt', 'w') as f:
             for o in outputs:
                 f.write(o + '\n')
         
