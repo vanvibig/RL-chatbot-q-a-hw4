@@ -40,7 +40,7 @@ def main():
         outputs = id2sent(dic, output)
         
         # with open(sys.argv[2], 'w') as f:
-        with open('sample_ouput_RL.txt', 'w') as f:
+        with open('sample_output_RL.txt', 'w') as f:
             for o in outputs:
                 f.write(o + '\n')
         
