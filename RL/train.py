@@ -12,7 +12,8 @@ checkpoint=False
 
 def main():
     max_seq_len = 20
-    voca_size = 10000
+    # voca_size = 10000
+    voca_size = 800
     embed_size = 300
     rnn_size = 256
     n_layers = 3
@@ -118,7 +119,7 @@ def rewardfunc(_output_sent, _ans_sent):
 
     for i in range(len(_ans_sent)):
         sent = _ans_sent[i]
-        if "không biết" not in sent or "không" not in sent:
+        if "không biết" not in sent.lower() or "tôi không" not in sent.lower() or "không không" not in sent.lower():
             score_list[i] += 0.1
 
         if '<unk>' not in sent:
