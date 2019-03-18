@@ -1,7 +1,6 @@
 from nltk.tokenize import RegexpTokenizer
 from collections import Counter
 import numpy as np
-from pyvi import ViTokenizer
 
 class Loader:
     def __init__(self, voca_size=20000, max_seq_len=20):
