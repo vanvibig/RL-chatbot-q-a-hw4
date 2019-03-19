@@ -13,10 +13,10 @@ checkpoint=False
 def main():
     max_seq_len = 20
     # voca_size = 10000
-    voca_size = 800
+    voca_size = 3900
     embed_size = 300
     # rnn_size = 256
-    rnn_size = 1024
+    rnn_size = 512
     n_layers = 3
 
     n_epoch = 300
