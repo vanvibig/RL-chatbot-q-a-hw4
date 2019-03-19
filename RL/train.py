@@ -15,7 +15,8 @@ def main():
     # voca_size = 10000
     voca_size = 800
     embed_size = 300
-    rnn_size = 256
+    # rnn_size = 256
+    rnn_size = 1024
     n_layers = 3
 
     n_epoch = 300
