@@ -6,7 +6,7 @@ import pickle
 import os
 import shutil
 
-checkpoint=False
+checkpoint=True
 
 def main():
     max_seq_len = 7
