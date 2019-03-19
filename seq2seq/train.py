@@ -9,7 +9,7 @@ import shutil
 checkpoint=False
 
 def main():
-    max_seq_len = 20
+    max_seq_len = 7
     # voca_size = 20000
     voca_size = 3900
     embed_size = 300

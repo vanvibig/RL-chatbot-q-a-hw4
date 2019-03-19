@@ -11,7 +11,7 @@ from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 checkpoint=False
 
 def main():
-    max_seq_len = 20
+    max_seq_len = 7
     # voca_size = 10000
     voca_size = 3900
     embed_size = 300
