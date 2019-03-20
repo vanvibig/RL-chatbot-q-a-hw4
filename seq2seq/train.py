@@ -9,9 +9,9 @@ import shutil
 checkpoint=True
 
 def main():
-    max_seq_len = 7
+    max_seq_len = 10
     # voca_size = 20000
-    voca_size = 3900
+    voca_size = 5600
     embed_size = 300
     rnn_size = 512
     # rnn_size = 256
